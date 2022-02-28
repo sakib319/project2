@@ -27,3 +27,32 @@
 </textarea><br><br>
 <input type="submit" value="Register" >
 <input type="reset" value="clear">
+  <h1>You have not clicked any button yet</h1>
+  
+  <button class="mybutton">button1</button>
+  
+  
+ <button class="mybutton">button2</button>
+ <button class="mybutton">button3</button>
+  
+  <Script>
+
+for(var i=0; i<3;i++){
+  
+  document.querySelectorAll(".mybutton")[i].addEventListener("click", function(){
+    
+    
+    
+    var text=this.innerHTML;
+    document.querySelector("h1").innerHTML=text + " is clicked";
+    
+    
+    
+  });
+  
+  
+  
+}
+
+
+</Script>
